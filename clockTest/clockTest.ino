@@ -69,7 +69,7 @@ void loop(void)
     //If we are loading, set it all up.
     if (state == STATE_LOADING)
     {
-      currHour = 0;
+      currHour = 12;
       currMin = 0;
       currSec = 0;
       ThinkTime = millis()+1*1000; //Next Think is one second away.
@@ -101,7 +101,7 @@ void loop(void)
             //If we hit the hour, reset it.
             if (currHour == 13)
             {
-              currHour = 0;
+              currHour = 1;
             }
           }
         }
